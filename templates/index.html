@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <script src=
+        "https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="../static/css/style.css"
+    />
+    <title>Meal plan</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <div class="header">
+          <div class="nav">
+            <div class="header-logo">
+              <img
+                src="../static/img/e61504fa984d4e658b08708b10358c2e.png"
+                alt="logo"
+              />
+            </div>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--active">Meal plans</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Weekly meals</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">How it works</a>
+              </li>
+            </ul>
+
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link-right">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link-right">
+                  <i class="far fa-bell"></i>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link-right">
+                  <i class="far fa-heart"></i>
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link-right">
+                  <img
+                    src="../static/img/139424343_2451742284972512_1366896137451579619_o.jpg"
+                    alt="avatar"
+                    class="header-nav-avatar"
+                  />
+                  <i class="fas fa-chevron-down header-arrow"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="header__title-page">
+          <div class="title__intro">
+            <h2 class="header__title">
+              MEAL <br />
+              PLANS
+            </h2>
+            <p class="header__title-solgan">Your personal diet assistant</p>
+            <a href="#container" class="header__title-btn btn"
+              >Suggest a meal</a
+            >
+            <div class="header__title-icon-list">
+              <i class="fas fa-weight header__title-icon"
+                ><span>Keep in fit</span></i
+              >
+              <i class="fas fa-utensils header__title-icon"
+                ><span>Full of nutrients</span></i
+              >
+              <i class="fas fa-dumbbell header__title-icon"
+                ><span>Full of life</span></i
+              >
+            </div>
+          </div>
+          <div class="img-slider">
+            <img src="../static/img/cooking.png" alt="cooking" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container" id="container">
+      <div class="title">
+        <h2>Put your diet on autopilot</h2>
+        <p>
+          Eat This Much creates personalized meal plans based on your food
+          preferences, budget, and schedule. Reach your diet and nutritional
+          goals with our calorie calculator, weekly meal plans, grocery lists
+          and more.
+          <strong>Create your meal plan right here in seconds.</strong>
+        </p>
+        <p>Ready to give it a shot? Let us know your diet.</p>
+      </div>
+
+      <div class="container__categories">
+        <div class="modal__container">
+          <div class="modal-header">
+            <h4 class="modal-title">Nutrition calculator</h4>
+          </div>
+          <div class="alert-text">
+            <p>
+              This calculator uses a standard BMR equation (the
+              Mifflin-St Jeor formula) to estimate your Calorie needs.
+              We also make some rough macronutrient suggestions, but
+              you're free to completely customize these values when
+              you create a free account.
+            </p>
+            <p>
+              <strong
+                >Keep in mind that this is a general estimate. </strong
+              >For best results, consult your healthcare provider.
+            </p>
+          </div>
+        </div>
+        <ul class="categories-list" id="js-category-list">
+          <li class="category-item">
+            <button type="button" class="js-category-item active">
+              <img src="../static/img/kebab.png" alt="kebab" />
+              <span>Anything</span>
+            </button>
+          </li>
+          <li class="category-item">
+            <button type="button" class="js-category-item ">
+              <img src="../static/img/broccoli.png" alt="broccoli" />
+              <span>Vegetarian</span>
+            </button>
+          </li>
+          <li class="category-item">
+            <button type="button" class="js-category-item ">
+              <img src="../static/img/radish.png" alt="radish" />
+              <span>Vegan</span>
+            </button>
+          </li>
+        </ul>
+
+          <div class="nutrition-form">
+            <div class="nutrition-form__above">              
+              <div class="modal-body">
+                <div class="calculator-form">
+                  <form action="/" method="POST" class="condensed-form" id="calculator_form">
+                    
+                    <!-- <div class="form-group nutrition">
+                      <label for="current-diet-type" id="diet-label"
+                        >Current diet type
+                      </label>
+                      <div id="current-diet-type" class="js-modal__current-diet-type">
+                        <span>Anything</span>
+                      </div>
+                    </div> -->
+                    <div class="form-group nutrition">
+                      <label for="goal-radio"> I want to </label>
+                      <div id="goal-ne" class="row">
+                        <div class="three-segment-radio" id="goal-radio">
+                          <div
+                            class="btn-toolbar"
+                            role="toolbar"
+                            aria-label="Toolbar with button groups"
+                          >
+                            <div
+                              id="goal"
+                              class="btn-group mr-2"
+                              role="group"
+                              aria-label="First group"
+                            >
+                              <label
+                                for="goal_0"
+                                name="goal_0"
+                                class="
+                                  btn
+                                  nutrition-selector-btn
+                                  btn-selector-secondary
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="goal"
+                                  value="L"
+                                  id="goal_0"
+                                />
+                                Lose weight
+                              </label>
+                              <label
+                                for="goal_1"
+                                name="goal_1"
+                                class="
+                                  btn
+                                  nutrition-selector-btn
+                                  btn-selector-secondary
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="goal"
+                                  value="M"
+                                  id="goal_1"
+                                />
+                                Maintain
+                              </label>
+                              <label
+                                for="goal_2"
+                                name="goal_2"
+                                class="
+                                  btn
+                                  nutrition-selector-btn
+                                  btn-selector-secondary
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="goal"
+                                  value="G"
+                                  id="goal_2"
+                                />
+                                Gain weight
+                              </label>
+                              <label
+                                for="goal_3"
+                                name="goal_3"
+                                class="
+                                  btn
+                                  nutrition-selector-btn
+                                  btn-selector-secondary
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="goal"
+                                  value="B"
+                                  id="goal_3"
+                                />
+                                Build muscle
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <div class="gender-wrap">
+                        <label for="gender"> I am </label>
+                      </div>
+                      <div id="gender">
+                        <div
+                          class="btn-toolbar"
+                          role="toolbar"
+                          aria-label="Toolbar with button groups"
+                        >
+                          <div
+                            id="gender-select"
+                            class="btn-group mr-2"
+                            role="group"
+                            aria-label="First group"
+                          >
+                            <label
+                              name="gender-m"
+                              for="gender-0"
+                              class="
+                                btn
+                                nutrition-selector-btn
+                                btn-selector-secondary
+                              "
+                            >
+                              <input
+                                type="radio"
+                                name="gender"
+                                id="gender-0"
+                                value="Male"
+                              />
+                              Male
+                            </label>
+                            <label
+                              name="gender-f"
+                              for="gender-1"
+                              class="
+                                btn
+                                nutrition-selector-btn
+                                btn-selector-secondary
+                              "
+                            >
+                              <input
+                                type="radio"
+                                name="gender"
+                                id="gender-1"
+                                value="Female"
+                              />
+                              Female</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="height-input"> Height </label>
+                      <div id="height-input">
+                        <input
+                          id="height"
+                          type="text"
+                          name="height"
+                          class="form-control nutrition-text"
+                        />
+                        <label for="height" class="signup-input-label"
+                          >cm</label
+                        >
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="weight-input"> Weight </label>
+                      <div id="weight-input">
+                        <input
+                          id="weight"
+                          class="form-control nutrition-text"
+                          type="text" name="weight"
+                        />
+                        <label for="weight" class="signup-input-label"
+                          >kgs</label
+                        >
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="age-input"> Age </label>
+                      <div id="age-input">
+                        <input
+                          id="age"
+                          class="form-control nutrition-text"
+                          type="text" name="age"
+                        />
+                        <label for="age" class="signup-input-label"
+                          >years</label
+                        >
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="neck-input"> Neck </label>
+                      <div id="neck-input">
+                        <input
+                          id="neck"
+                          class="form-control nutrition-text"
+                          type="text" name="neck"
+                        />
+                        <label for="neck" class="signup-input-label">cm</label>
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="waist-input"> Waist </label>
+                      <div id="waist-input">
+                        <input
+                          id="waist"
+                          class="form-control nutrition-text"
+                          type="text" name="waist"
+                        />
+                        <label for="waist" class="signup-input-label">cm</label>
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="hip-input"> Hip </label>
+                      <div id="hip-input">
+                        <input
+                          id="hip"
+                          class="form-control nutrition-text"
+                          type="text" name="hip"
+                        />
+                        <label for="hip" class="signup-input-label">cm</label>
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="activity-level">Activity level</label>
+                      <div id="activity-level">
+                        <select
+                          id="c59-activity-level"
+                          class="form-control"
+                          name="activity-level"
+                        >
+                          <option value="1.2" selected>Sedentary</option>
+                          <option value="1.375">Lightly Active</option>
+                          <option value="1.55">Moderately Active</option>
+                          <option value="1.725">Very Active</option>
+                          <option value="1.9">Extremely Active</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="body-type">Body type</label>
+                      <div id="body-type">
+                        <select
+                          id="body-type"
+                          class="form-control"
+                          name="body-type"
+                        >
+                          <option value="ENDOMORPH BODY" selected>ENDOMORPH BODY</option>
+                          <option value="ECTOMORPH BODY">ECTOMORPH BODY</option>
+                          <option value="MESOMORPH BODY TYPE">MESOMORPH BODY</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="allergy-input"> Allergy </label>
+                      <div id="allergy-input">
+                        <input
+                          id="allergy"
+                          class="form-control nutrition-text"
+                          type="text" name="allergy"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="weight-goal-form">
+                      <div class="form-group nutrition">
+                        <label for="goal-weight-input">
+                          Enter your goal weight
+                        </label>
+                        <div id="goal-weight-input">
+                          <input
+                            id="goal-weight"
+                            class="form-control nutrition-text"
+                            type="text" name="goal-weight"
+                          />
+                          <label for="goal-weight" class="signup-input-label"
+                            >kgs</label
+                          >
+                        </div>
+                      </div>
+
+                      <div class="form-group nutrition">
+                        <label for="weight-change-rate-input">
+                          Weight change rate
+                        </label>
+                        <div id="weight-change-rate-input1">
+                          <div class="gain-lose-label">Gain</div>
+                          <div class="weight-input-field">
+                            <input
+                              id="weight-change-rate-input"
+                              class="form-control"
+                              type="number"
+                              step="0.1"
+                              min="0"
+                              max="0.9"
+                              name="weight-rate"
+                              oninvalid="this.setCustomValidity('The CDC and health professionals strongly advise against weight changes of more than 0.9 kgs a week.')"
+                            />
+                          </div>
+                          <div class="weight-units">kgs per week</div>
+                        </div>
+                      </div>
+                      <small class="expected-goal-weight-date">
+                        {{date_goal_print}}
+                      </small>
+                    </div>
+                    <div class="calculate">
+                      <input type="submit" name="action" value="⚖ Calculate" class="btn calculate_btn">
+                    </div>
+                    {% if calo_total < 1800 and calo_total != 1 %}
+                    <div class="low_calo_warning">
+                      {{comment_calo}} 
+                    </div>
+                    {% endif %}
+                  </div>
+                  <div class="result">
+                    <h3 style="margin-top: 20px">Result</h3>
+                    <table style="width:100%;">
+                      <tr>
+                        <th>Criteria</th>
+                        <th>Value</th>
+                        <th>Comment</th>
+                      </tr>
+                      <tr>
+                        <td>BMI</td>
+                        <td>{{ bmi }}</td>
+                        <td>{{bmi_comment}}</td>
+                      </tr>
+                      <tr>
+                        <td>Body fat</td>
+                        <td>{{ bodyFat }}</td>
+                        <td>{{comment}}</td>
+                      </tr>
+                      <tr>
+                        <td>Calories</td>
+                        <td>{{ calo_total }}</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Protein</td>
+                        <td>{{ protein }}</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Carbohydrate</td>
+                        <td>{{ cabohydrate }}</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Fat</td>
+                        <td>{{ fats }}</td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                </form>
+                <form action="/" method="POST" class="container__calo" id="container__calo">          
+                  <div class="form-group">
+                    <label class="calo-label" for="num-meals-selector">Number of meals</label>
+                    <div class="num-meals">
+                      <select id="num-meals-selector" name="num-meals-selector">
+                        <option value="2" selected>3 meals</option>
+                        <option value="3">4 meals</option>
+                        <option value="4">5 meals</option>
+                      </select>
+                    </div>
+                  </div>                  
+                  <div class="apply-result">
+                    <input type="submit" value="✔ Apply these settings" class="btn" name="action">                    
+                  </div>
+                </form>                
+              </div>
+            </div>
+          </div>
+          <!-- <div class="form-btn">
+            <button type="button" class="generate btn js-generate">
+              Generate
+            </button>
+          </div> -->
+      </div>
+
+      <div class="container__meal-planner" id="regenerate-meal">
+        <div class="meal-planner__header">
+          <h2>Today Meal's Plan</h2>
+          <div class="regenerate">
+            <span>Regenerate</span>
+            <button type="button">
+              <i class="fa fa-refresh" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <div class="meal-planner__total-calo">
+          <label for="nutri-info" class="meal-planner__total-open">
+            <img src="../static/img/pie-chart.png" alt="pie-chart" />
+            <span>{{sum_calo}} Calories</span>
+            <i class="fas fa-info-circle"></i>
+            <span class="total-calo-details">Details</span>
+          </label>
+          <input type="checkbox" id="nutri-info" name="nutri-info" value="nutri-info" onclick="toggleBoxVisibility()">
+          <div class="pie-details" id="box" style="visibility: hidden;">
+            <canvas id="pieChart" width="200" height="200"></canvas>
+            <div class="nutrition-info nutrition-info-main">
+              <ul class="nutrition-list nutrition-list-main">
+                <li class="nutrition-item nutrition-item-main">Fat</li>
+                <li class="nutrition-item nutrition-item-main">Cholesterol</li>
+                <li class="nutrition-item nutrition-item-main">Sodium</li>
+                <li class="nutrition-item nutrition-item-main">Carbohydrate
+                  <ul class="nutrition-list-sub">
+                    <li class="nutrition-item-sub">Fiber</li>
+                    <li class="nutrition-item-sub">Sugar</li>
+                  </ul>
+                </li>
+                <li class="nutrition-item nutrition-item-main">Protein</li>
+                <li class="nutrition-item nutrition-item-main">Vitamin D</li>
+                <li class="nutrition-item nutrition-item-main">Calcium</li>
+                <li class="nutrition-item nutrition-item-main">Iron</li>
+                <li class="nutrition-item nutrition-item-main">Potassium</li>
+              </ul>
+              <ul class="nutrition-list nutrition-list-main">
+                <li class="nutrition-item nutrition-data-main">{{sum_fat}}g</li>
+                <li class="nutrition-item nutrition-data-main">{{sum_Cholesterol}}mg</li>
+                <li class="nutrition-item nutrition-data-main">{{sum_sodium}}mg</li>
+                <li class="nutrition-item nutrition-data-main">{{sum_carbs}}g
+                  <ul class="nutrition-list-sub">
+                    <li class="nutrition-item-sub">{{sum_fiber}}g</li>
+                    <li class="nutrition-item-sub">{{sum_sugar}}g</li>
+                  </ul>
+                </li>
+                <li class="nutrition-item nutrition-data-main">{{sum_pro}}g</li>
+                <li class="nutrition-item nutrition-data-main">{{sum_VinD}}mcg</li>
+                <li class="nutrition-item nutrition-data-main">{{sum_calcium}}mg</li>
+                <li class="nutrition-item nutrition-data-main">{{sum_iron}}mg</li>
+                <li class="nutrition-item nutrition-data-main">{{sum_potassium}}mg</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {% if num_meal == 2 and protein > 2 and cabohydrate > 2 and fats > 2 %}
+        <div class="meal-planner__breakfast meal-planner__daily">
+          <div class="daily__header">
+            <div class="left">
+              <h4>Breakfast</h4>
+              <small>{{thirdMeal_calo}} Calories</small>
+            </div>
+            <div class="right">
+              <button type="button">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="daily__food-portion">
+            <div class="daily__food">
+              <div class="left">
+                <img src="../static/img/hot-dog.png" alt="chicken-leg" />
+                <div class="meal-planner__details">
+                  <h6 class="name">{{thirdMeal_name}}</h6>
+                  <div class="portion">{{thirdMeal_serving}}g</div>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="daily__food-info">
+              <h5>{{thirdMeal_name}}</h5>
+              <hr />
+              <div class="nutrition-info">
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">Calories</li>
+                  <li class="nutrition-item">Protein</li>
+                  <li class="nutrition-item">Fat</li>
+                  <li class="nutrition-item">Carbs</li>
+                </ul>
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">{{thirdMeal_calo}}</li>
+                  <li class="nutrition-item">{{thirdMeal_pro}}g</li>
+                  <li class="nutrition-item">{{thirdMeal_fat}}g</li>
+                  <li class="nutrition-item">{{thirdMeal_Carb}}g</li>
+                </ul>
+              </div>
+              <hr />
+              <div class="nutrition-ingredients">
+                <ul class="nutrition-ingredient-list">
+                  <li class="nutrition-ingredient-item">{{thirdMeal_ingredients}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="meal-planner__lunch meal-planner__daily">
+          <div class="daily__header">
+            <div class="left">
+              <h4>Lunch</h4>
+              <small>{{firstMeal_calo}} Calories</small>
+            </div>
+            <div class="right">
+              <button type="button">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="daily__food-portion">
+            <div class="daily__food">
+              <div class="left">
+                <img src="../static/img/chicken-leg.png" alt="chicken-leg" />
+                <div class="meal-planner__details">
+                  <h6 class="name">{{firstMeal_name}}</h6>
+                  <div class="portion">{{firstMeal_serving}}g</div>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="daily__food-info">
+              <h5>{{firstMeal_name}}</h5>
+              <hr />
+              <div class="nutrition-info">
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">Calories</li>
+                  <li class="nutrition-item">Protein</li>
+                  <li class="nutrition-item">Fat</li>
+                  <li class="nutrition-item">Carbs</li>
+                </ul>
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">{{firstMeal_calo}}</li>
+                  <li class="nutrition-item">{{firstMeal_pro}}g</li>
+                  <li class="nutrition-item">{{firstMeal_fat}}g</li>
+                  <li class="nutrition-item">{{firstMeal_Carb}}g</li>
+                </ul>
+              </div>
+              <hr />
+              <div class="nutrition-ingredients">
+                <ul class="nutrition-ingredient-list">
+                  <li class="nutrition-ingredient-item">{{firstMeal_ingredients}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="meal-planner__dinner meal-planner__daily">
+          <div class="daily__header">
+            <div class="left">
+              <h4>Dinner</h4>
+              <small>{{secondMeal_calo}} Calories</small>
+            </div>
+            <div class="right">
+              <button type="button">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="daily__food-portion">
+            <div class="daily__food">
+              <div class="left">
+                <img src="../static/img/sushi.png" alt="chicken-leg" />
+                <div class="meal-planner__details">
+                  <h6 class="name">{{secondMeal_name}}</h6>
+                  <div class="portion">{{secondMeal_serving}}g</div>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="daily__food-info">
+              <h5>{{secondMeal_name}}</h5>
+              <hr />
+              <div class="nutrition-info">
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">Calories</li>
+                  <li class="nutrition-item">Protein</li>
+                  <li class="nutrition-item">Fat</li>
+                  <li class="nutrition-item">Carbs</li>
+                </ul>
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">{{secondMeal_calo}}</li>
+                  <li class="nutrition-item">{{secondMeal_pro}}g</li>
+                  <li class="nutrition-item">{{secondMeal_fat}}g</li>
+                  <li class="nutrition-item">{{secondMeal_Carb}}g</li>
+                </ul>
+              </div>
+              <hr />
+              <div class="nutrition-ingredients">
+                <ul class="nutrition-ingredient-list">
+                  <li class="nutrition-ingredient-item">{{secondMeal_ingredients}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}  
+        {% if num_meal == 3 and protein > 2 and cabohydrate > 2 and fats > 2 and x >= 4%} 
+        <div class="meal-planner__breakfast meal-planner__daily">
+          <div class="daily__header">
+            <div class="left">
+              <h4>Breakfast</h4>
+              <small>{{thirdMeal_calo}} Calories</small>
+            </div>
+            <div class="right">
+              <button type="button">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="daily__food-portion">
+            <div class="daily__food">
+              <div class="left">
+                <img src="../static/img/hot-dog.png" alt="chicken-leg" />
+                <div class="meal-planner__details">
+                  <h6 class="name">{{thirdMeal_name}}</h6>
+                  <div class="portion">{{thirdMeal_serving}}g</div>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="daily__food-info">
+              <h5>{{thirdMeal_name}}</h5>
+              <hr />
+              <div class="nutrition-info">
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">Calories</li>
+                  <li class="nutrition-item">Protein</li>
+                  <li class="nutrition-item">Fat</li>
+                  <li class="nutrition-item">Carbs</li>
+                </ul>
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">{{thirdMeal_calo}}</li>
+                  <li class="nutrition-item">{{thirdMeal_pro}}g</li>
+                  <li class="nutrition-item">{{thirdMeal_fat}}g</li>
+                  <li class="nutrition-item">{{thirdMeal_Carb}}g</li>
+                </ul>
+              </div>
+              <hr />
+              <div class="nutrition-ingredients">
+                <ul class="nutrition-ingredient-list">
+                  <li class="nutrition-ingredient-item">{{thirdMeal_ingredients}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="meal-planner__lunch meal-planner__daily">
+          <div class="daily__header">
+            <div class="left">
+              <h4>Lunch</h4>
+              <small>{{firstMeal_calo}} Calories</small>
+            </div>
+            <div class="right">
+              <button type="button">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="daily__food-portion">
+            <div class="daily__food">
+              <div class="left">
+                <img src="../static/img/chicken-leg.png" alt="chicken-leg" />
+                <div class="meal-planner__details">
+                  <h6 class="name">{{firstMeal_name}}</h6>
+                  <div class="portion">{{firstMeal_serving}}g</div>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="daily__food-info">
+              <h5>{{firstMeal_name}}</h5>
+              <hr />
+              <div class="nutrition-info">
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">Calories</li>
+                  <li class="nutrition-item">Protein</li>
+                  <li class="nutrition-item">Fat</li>
+                  <li class="nutrition-item">Carbs</li>
+                </ul>
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">{{firstMeal_calo}}</li>
+                  <li class="nutrition-item">{{firstMeal_pro}}g</li>
+                  <li class="nutrition-item">{{firstMeal_fat}}g</li>
+                  <li class="nutrition-item">{{firstMeal_Carb}}g</li>
+                </ul>
+              </div>
+              <hr />
+              <div class="nutrition-ingredients">
+                <ul class="nutrition-ingredient-list">
+                  <li class="nutrition-ingredient-item">{{firstMeal_ingredients}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="meal-planner__dinner meal-planner__daily">
+          <div class="daily__header">
+            <div class="left">
+              <h4>Dinner</h4>
+              <small>{{secondMeal_calo}} Calories</small>
+            </div>
+            <div class="right">
+              <button type="button">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="daily__food-portion">
+            <div class="daily__food">
+              <div class="left">
+                <img src="../static/img/sushi.png" alt="chicken-leg" />
+                <div class="meal-planner__details">
+                  <h6 class="name">{{secondMeal_name}}</h6>
+                  <div class="portion">{{secondMeal_serving}}g</div>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="daily__food-info">
+              <h5>{{secondMeal_name}}</h5>
+              <hr />
+              <div class="nutrition-info">
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">Calories</li>
+                  <li class="nutrition-item">Protein</li>
+                  <li class="nutrition-item">Fat</li>
+                  <li class="nutrition-item">Carbs</li>
+                </ul>
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">{{secondMeal_calo}}</li>
+                  <li class="nutrition-item">{{secondMeal_pro}}g</li>
+                  <li class="nutrition-item">{{secondMeal_fat}}g</li>
+                  <li class="nutrition-item">{{secondMeal_Carb}}g</li>
+                </ul>
+              </div>
+              <hr />
+              <div class="nutrition-ingredients">
+                <ul class="nutrition-ingredient-list">
+                  <li class="nutrition-ingredient-item">{{secondMeal_ingredients}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="meal-planner__snack meal-planner__daily">
+          <div class="daily__header">
+            <div class="left">
+              <h4>Snack</h4>
+              <small>{{fourthMeal_calo}} Calories</small>
+            </div>
+            <div class="right">
+              <button type="button">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="daily__food-portion">
+            <div class="daily__food">
+              <div class="left">
+                <img src="../static/img/sushi.png" alt="chicken-leg" />
+                <div class="meal-planner__details">
+                  <h6 class="name">{{fourthMeal_name}}</h6>
+                  <div class="portion">{{fourthMeal_serving}}g</div>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="daily__food-info">
+              <h5>{{fourthMeal_name}}</h5>
+              <hr />
+              <div class="nutrition-info">
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">Calories</li>
+                  <li class="nutrition-item">Protein</li>
+                  <li class="nutrition-item">Fat</li>
+                  <li class="nutrition-item">Carbs</li>
+                </ul>
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">{{fourthMeal_calo}}</li>
+                  <li class="nutrition-item">{{fourthMeal_pro}}g</li>
+                  <li class="nutrition-item">{{fourthMeal_fat}}g</li>
+                  <li class="nutrition-item">{{fourthMeal_Carb}}g</li>
+                </ul>
+              </div>
+              <hr />
+              <div class="nutrition-ingredients">
+                <ul class="nutrition-ingredient-list">
+                  <li class="nutrition-ingredient-item">{{fourthMeal_ingredients}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %} 
+        
+        {% if num_meal == 4 and protein > 2 and cabohydrate > 2 and fats > 2 and x >=5 %}
+
+        <div class="meal-planner__breakfast meal-planner__daily">
+          <div class="daily__header">
+            <div class="left">
+              <h4>Breakfast</h4>
+              <small>{{thirdMeal_calo}} Calories</small>
+            </div>
+            <div class="right">
+              <button type="button">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="daily__food-portion">
+            <div class="daily__food">
+              <div class="left">
+                <img src="../static/img/hot-dog.png" alt="chicken-leg" />
+                <div class="meal-planner__details">
+                  <h6 class="name">{{thirdMeal_name}}</h6>
+                  <div class="portion">{{thirdMeal_serving}}g</div>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="daily__food-info">
+              <h5>{{thirdMeal_name}}</h5>
+              <hr />
+              <div class="nutrition-info">
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">Calories</li>
+                  <li class="nutrition-item">Protein</li>
+                  <li class="nutrition-item">Fat</li>
+                  <li class="nutrition-item">Carbs</li>
+                </ul>
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">{{thirdMeal_calo}}</li>
+                  <li class="nutrition-item">{{thirdMeal_pro}}g</li>
+                  <li class="nutrition-item">{{thirdMeal_fat}}g</li>
+                  <li class="nutrition-item">{{thirdMeal_Carb}}g</li>
+                </ul>
+              </div>
+              <hr />
+              <div class="nutrition-ingredients">
+                <ul class="nutrition-ingredient-list">
+                  <li class="nutrition-ingredient-item">{{thirdMeal_ingredients}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="meal-planner__lunch meal-planner__daily">
+          <div class="daily__header">
+            <div class="left">
+              <h4>Lunch</h4>
+              <small>{{firstMeal_calo}} Calories</small>
+            </div>
+            <div class="right">
+              <button type="button">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="daily__food-portion">
+            <div class="daily__food">
+              <div class="left">
+                <img src="../static/img/chicken-leg.png" alt="chicken-leg" />
+                <div class="meal-planner__details">
+                  <h6 class="name">{{firstMeal_name}}</h6>
+                  <div class="portion">{{firstMeal_serving}}g</div>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="daily__food-info">
+              <h5>{{firstMeal_name}}</h5>
+              <hr />
+              <div class="nutrition-info">
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">Calories</li>
+                  <li class="nutrition-item">Protein</li>
+                  <li class="nutrition-item">Fat</li>
+                  <li class="nutrition-item">Carbs</li>
+                </ul>
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">{{firstMeal_calo}}</li>
+                  <li class="nutrition-item">{{firstMeal_pro}}g</li>
+                  <li class="nutrition-item">{{firstMeal_fat}}g</li>
+                  <li class="nutrition-item">{{firstMeal_Carb}}g</li>
+                </ul>
+              </div>
+              <hr />
+              <div class="nutrition-ingredients">
+                <ul class="nutrition-ingredient-list">
+                  <li class="nutrition-ingredient-item">{{firstMeal_ingredients}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="meal-planner__dinner meal-planner__daily">
+          <div class="daily__header">
+            <div class="left">
+              <h4>Dinner</h4>
+              <small>{{secondMeal_calo}} Calories</small>
+            </div>
+            <div class="right">
+              <button type="button">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="daily__food-portion">
+            <div class="daily__food">
+              <div class="left">
+                <img src="../static/img/sushi.png" alt="chicken-leg" />
+                <div class="meal-planner__details">
+                  <h6 class="name">{{secondMeal_name}}</h6>
+                  <div class="portion">{{secondMeal_serving}}g</div>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="daily__food-info">
+              <h5>{{secondMeal_name}}</h5>
+              <hr />
+              <div class="nutrition-info">
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">Calories</li>
+                  <li class="nutrition-item">Protein</li>
+                  <li class="nutrition-item">Fat</li>
+                  <li class="nutrition-item">Carbs</li>
+                </ul>
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">{{secondMeal_calo}}</li>
+                  <li class="nutrition-item">{{secondMeal_pro}}g</li>
+                  <li class="nutrition-item">{{secondMeal_fat}}g</li>
+                  <li class="nutrition-item">{{secondMeal_Carb}}g</li>
+                </ul>
+              </div>
+              <hr />
+              <div class="nutrition-ingredients">
+                <ul class="nutrition-ingredient-list">
+                  <li class="nutrition-ingredient-item">{{secondMeal_ingredients}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="meal-planner__snack meal-planner__daily">
+          <div class="daily__header">
+            <div class="left">
+              <h4>Snack</h4>
+              <small>{{fourthMeal_calo}} Calories</small>
+            </div>
+            <div class="right">
+              <button type="button">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="daily__food-portion">
+            <div class="daily__food">
+              <div class="left">
+                <img src="../static/img/sushi.png" alt="chicken-leg" />
+                <div class="meal-planner__details">
+                  <h6 class="name">{{fourthMeal_name}}</h6>
+                  <div class="portion">{{fourthMeal_serving}}g</div>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="daily__food-info">
+              <h5>{{fourthMeal_name}}</h5>
+              <hr />
+              <div class="nutrition-info">
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">Calories</li>
+                  <li class="nutrition-item">Protein</li>
+                  <li class="nutrition-item">Fat</li>
+                  <li class="nutrition-item">Carbs</li>
+                </ul>
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">{{fourthMeal_calo}}</li>
+                  <li class="nutrition-item">{{fourthMeal_pro}}g</li>
+                  <li class="nutrition-item">{{fourthMeal_fat}}g</li>
+                  <li class="nutrition-item">{{fourthMeal_Carb}}g</li>
+                </ul>
+              </div>
+              <hr />
+              <div class="nutrition-ingredients">
+                <ul class="nutrition-ingredient-list">
+                  <li class="nutrition-ingredient-item">{{fourthMeal_ingredients}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="meal-planner__snack meal-planner__daily">
+          <div class="daily__header">
+            <div class="left">
+              <h4>Snack</h4>
+              <small>{{fifthMeal_calo}} Calories</small>
+            </div>
+            <div class="right">
+              <button type="button">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="daily__food-portion">
+            <div class="daily__food">
+              <div class="left">
+                <img src="../static/img/sushi.png" alt="chicken-leg" />
+                <div class="meal-planner__details">
+                  <h6 class="name">{{fifthMeal_name}}</h6>
+                  <div class="portion">{{fifthMeal_serving}}g</div>
+                </div>
+              </div>
+              <div class="right">
+                <button type="button">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="daily__food-info">
+              <h5>{{fifthMeal_name}}</h5>
+              <hr />
+              <div class="nutrition-info">
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">Calories</li>
+                  <li class="nutrition-item">Protein</li>
+                  <li class="nutrition-item">Fat</li>
+                  <li class="nutrition-item">Carbs</li>
+                </ul>
+                <ul class="nutrition-list">
+                  <li class="nutrition-item">{{fifthMeal_calo}}</li>
+                  <li class="nutrition-item">{{fifthMeal_pro}}g</li>
+                  <li class="nutrition-item">{{fifthMeal_fat}}g</li>
+                  <li class="nutrition-item">{{fifthMeal_Carb}}g</li>
+                </ul>
+              </div>
+              <hr />
+              <div class="nutrition-ingredients">
+                <ul class="nutrition-ingredient-list">
+                  <li class="nutrition-ingredient-item">{{fifthMeal_ingredients}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %} 
+        {% if num_meal >= 2 and x < 3%}
+        <p>{{sorry}}</p>
+        {%endif %}
+        {% if num_meal >= 3 and x < 4%}
+        <p>{{sorry}}</p>
+        {%endif%}
+        {% if num_meal >= 4 and x < 5%}
+        <p>{{sorry}}</p>
+        {%endif%}
+
+
+      </div>
+        
+
+      
+    </div>
+    <footer class="footer"></footer>
+
+    <!-- <div class="modals js-modals">
+      <div class="modal__overlay"></div>
+      <div class="modal__body js-modal__body">
+        <div class="modal__inner">
+          <div class="nutrition-form">
+            <div class="nutrition-form__above">
+              <div class="modal-header">
+                <h4 class="modal-title">Nutrition calculator</h4>
+                <button type="button" class="close js-close">x</button>
+              </div>
+              <div class="modal-body">
+                <div class="calculator-form">
+                  <form action="/" method="POST" class="condensed-form" id="calculator_form">
+                    <div class="alert-text">
+                      <p>
+                        This calculator uses a standard BMR equation (the
+                        Mifflin-St Jeor formula) to estimate your Calorie needs.
+                        We also make some rough macronutrient suggestions, but
+                        you're free to completely customize these values when
+                        you create a free account.
+                      </p>
+                      <p>
+                        <strong
+                          >Keep in mind that this is a general estimate. </strong
+                        >For best results, consult your healthcare provider.
+                      </p>
+                    </div>
+                    <div class="form-group nutrition">
+                      <label for="current-diet-type" id="diet-label"
+                        >Current diet type
+                      </label>
+                      <div id="current-diet-type" class="js-modal__current-diet-type">
+                        <span>Anything</span>
+                      </div>
+                    </div>
+                    <div class="form-group nutrition">
+                      <label for="goal-radio"> I want to </label>
+                      <div id="goal-ne" class="row">
+                        <div class="three-segment-radio" id="goal-radio">
+                          <div
+                            class="btn-toolbar"
+                            role="toolbar"
+                            aria-label="Toolbar with button groups"
+                          >
+                            <div
+                              id="goal"
+                              class="btn-group mr-2"
+                              role="group"
+                              aria-label="First group"
+                            >
+                              <label
+                                for="goal_0"
+                                name="goal_0"
+                                class="
+                                  btn
+                                  nutrition-selector-btn
+                                  btn-selector-secondary
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="goal"
+                                  value="L"
+                                  id="goal_0"
+                                />
+                                Lose weight
+                              </label>
+                              <label
+                                for="goal_1"
+                                name="goal_1"
+                                class="
+                                  btn
+                                  nutrition-selector-btn
+                                  btn-selector-secondary
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="goal"
+                                  value="M"
+                                  id="goal_1"
+                                />
+                                Maintain
+                              </label>
+                              <label
+                                for="goal_2"
+                                name="goal_2"
+                                class="
+                                  btn
+                                  nutrition-selector-btn
+                                  btn-selector-secondary
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="goal"
+                                  value="G"
+                                  id="goal_2"
+                                />
+                                Gain weight
+                              </label>
+                              <label
+                                for="goal_3"
+                                name="goal_3"
+                                class="
+                                  btn
+                                  nutrition-selector-btn
+                                  btn-selector-secondary
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="goal"
+                                  value="B"
+                                  id="goal_3"
+                                />
+                                Build muscle
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <div class="gender-wrap">
+                        <label for="gender"> I am </label>
+                      </div>
+                      <div id="gender">
+                        <div
+                          class="btn-toolbar"
+                          role="toolbar"
+                          aria-label="Toolbar with button groups"
+                        >
+                          <div
+                            id="gender-select"
+                            class="btn-group mr-2"
+                            role="group"
+                            aria-label="First group"
+                          >
+                            <label
+                              name="gender-m"
+                              for="gender-0"
+                              class="
+                                btn
+                                nutrition-selector-btn
+                                btn-selector-secondary
+                              "
+                            >
+                              <input
+                                type="radio"
+                                name="gender"
+                                id="gender-0"
+                                value="Male"
+                              />
+                              Male
+                            </label>
+                            <label
+                              name="gender-f"
+                              for="gender-1"
+                              class="
+                                btn
+                                nutrition-selector-btn
+                                btn-selector-secondary
+                              "
+                            >
+                              <input
+                                type="radio"
+                                name="gender"
+                                id="gender-1"
+                                value="Female"
+                              />
+                              Female</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="height-input"> Height </label>
+                      <div id="height-input">
+                        <input
+                          id="height"
+                          type="text"
+                          name="height"
+                          class="form-control nutrition-text"
+                        />
+                        <label for="height" class="signup-input-label"
+                          >cm</label
+                        >
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="weight-input"> Weight </label>
+                      <div id="weight-input">
+                        <input
+                          id="weight"
+                          class="form-control nutrition-text"
+                          type="text" name="weight"
+                        />
+                        <label for="weight" class="signup-input-label"
+                          >kgs</label
+                        >
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="age-input"> Age </label>
+                      <div id="age-input">
+                        <input
+                          id="age"
+                          class="form-control nutrition-text"
+                          type="text" name="age"
+                        />
+                        <label for="age" class="signup-input-label"
+                          >years</label
+                        >
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="neck-input"> Neck </label>
+                      <div id="neck-input">
+                        <input
+                          id="neck"
+                          class="form-control nutrition-text"
+                          type="text" name="neck"
+                        />
+                        <label for="neck" class="signup-input-label">cm</label>
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="waist-input"> Waist </label>
+                      <div id="waist-input">
+                        <input
+                          id="waist"
+                          class="form-control nutrition-text"
+                          type="text" name="waist"
+                        />
+                        <label for="waist" class="signup-input-label">cm</label>
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="hip-input"> Hip </label>
+                      <div id="hip-input">
+                        <input
+                          id="hip"
+                          class="form-control nutrition-text"
+                          type="text" name="hip"
+                        />
+                        <label for="hip" class="signup-input-label">cm</label>
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="activity-level">Activity level</label>
+                      <div id="activity-level">
+                        <select
+                          id="c59-activity-level"
+                          class="form-control"
+                          name="activity-level"
+                        >
+                          <option value="1.2" selected>Sedentary</option>
+                          <option value="1.375">Lightly Active</option>
+                          <option value="1.55">Moderately Active</option>
+                          <option value="1.725">Very Active</option>
+                          <option value="1.9">Extremely Active</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group nutrition">
+                      <label for="allergy-input"> Allergy </label>
+                      <div id="allergy-input">
+                        <input
+                          id="allergy"
+                          class="form-control nutrition-text"
+                          type="text" name="allery"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="weight-goal-form">
+                      <div class="form-group nutrition">
+                        <label for="goal-weight-input">
+                          Enter your goal weight
+                        </label>
+                        <div id="goal-weight-input">
+                          <input
+                            id="goal-weight"
+                            class="form-control nutrition-text"
+                            type="text" name="goal-weight"
+                          />
+                          <label for="goal-weight" class="signup-input-label"
+                            >kgs</label
+                          >
+                        </div>
+                      </div>
+
+                      <div class="form-group nutrition">
+                        <label for="weight-change-rate-input">
+                          Weight change rate
+                        </label>
+                        <div id="weight-change-rate-input1">
+                          <div class="gain-lose-label">Gain</div>
+                          <div class="weight-input-field">
+                            <input
+                              id="weight-change-rate-input"
+                              class="form-control"
+                              type="number"
+                              step="0.1"
+                              min="0"
+                              max="0.9"
+                              name="weight-rate"
+                              oninvalid="this.setCustomValidity('The CDC and health professionals strongly advise against weight changes of more than 0.9 kgs a week.')"
+                            />
+                          </div>
+                          <div class="weight-units">kgs per week</div>
+                        </div>
+                      </div>
+                      <small class="expected-goal-weight-date">
+                        You should reach your goal in Nov 2021.
+                      </small>
+                      <div class="weight_goal_weekly_rate_warning">
+                        The CDC and health professionals strongly advise against
+                        weight changes of more than 0.9 kgs a week.
+                      </div> -->
+                    <!-- </div>
+                    <div class="calculate">
+                      <input type="submit" value="⚖ Calculate" class="btn">
+                    </div>
+                    <div class="low_calo_warning">
+                      Based on your entries, our equations came up with a target
+                      under 1200 Calories. Eating under 1200 Calories per day is
+                      generally considered extreme, and you should consult a
+                      health professional before doing so.
+                    </div>
+                  </form>
+                </div>
+                <div class="result">
+                  <h3 style="margin-top: 20px">Result</h3>
+                  <p>{{ bmr }}</p>
+                  <p>{{ bodyFat }}</p>
+                </div>
+                <div class="apply-result">
+                  <button type="button" class="btn">
+                    <i class="fas fa-check"></i>
+                    Apply these settings
+                  </button>
+                </div>
+                <div class="footer">
+                  <button type="button" class="close js-close">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  -->
+    <script>
+      var ctx = document.getElementById("pieChart").getContext("2d");
+      var pieChart = new Chart(ctx, {type: "pie",  data: { labels: {{labels | safe}},
+          datasets: [
+            {
+              label: "Nutritions",
+              data: {{values | safe}},
+              fill: true,
+              backgroundColor: ["#4C8F62", "#B33030", "#FFD061"]
+            }
+          ]
+        }, 
+        options: {
+          responsive: false,
+          tooltips: {
+            callbacks: {
+              labels: {{labels | safe}},
+              data: {{values | safe}} 
+            }
+          }
+        }
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="../static/js/script.js"
+    ></script>
+  </body>
+</html>

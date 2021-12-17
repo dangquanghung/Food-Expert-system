@@ -1,0 +1,91 @@
+<html>
+  <body>
+    <h3>Income Prediction Form</h3>
+
+    <div>
+      <form
+      action="/"
+      method="POST"
+      class="condensed-form"
+      id="calculator_form"
+    >
+        Height :<br />
+        <input type="text" name="height" /><br />
+        weight:<br />
+        <input type="text" name="weight" /><br />
+        age :<br />
+        <input type="text" name="age" /><br />
+        neck :<br />
+        <input type="text" name="neck" /><br />
+        waist :<br />
+        <input type="text" name="waist" /><br />
+        hip :<br />
+        <input type="text" name="hip" /><br />
+        weight_goal :<br />
+        <input type="text" name="weight_goal" /><br />
+        weight_change_rate :<br />
+        <input type="text" name="weight_change_rate" /><br />
+        
+        <select 
+        id="c59-activity-level"
+                          class="form-control"
+                          name="activity_level"
+                        >
+                          <option value="1.2" selected>Sedentary</option>
+                          <option value="1.375">Lightly Active</option>
+                          <option value="1.55">Moderately Active</option>
+                          <option value="1.725">Very Active</option>
+                          <option value="1.9">Extremely Active</option>
+                        </select>
+        <select 
+        id="c59-activity-level"
+                          class="form-control"
+                          name="goal"
+                        >
+                          <option value="Gain weight" selected>Gain weight</option>
+                          <option value="Lose weight">Lose weight</option>
+                          <option value="Maintain">Maintain</option>
+                          <option value="Build muscle">Build muscle</option>
+                          
+                        </select>
+        <select 
+        id="c59-activity-level"
+                          class="form-control"
+                          name="gender"
+                        >
+                          <option value="male" selected>male</option>
+                          <option value="female">female</option>
+                        </select>
+      
+      <div class="panel-body">                
+        <input
+          type="submit"
+          name="Submit"
+          value="Submit"
+        >
+      </div>
+        
+      <div class="panel-body">
+        <input
+          type="submit"
+          name="Suggestion"
+          value="Suggestion"
+        >
+      </div>
+        
+      </form>
+      {% if bmr %}
+      <p>Wow !!! Your bmr is <strong>{{bmr}}</strong></p>
+      {% endif %}
+      <p>Wow !!! Your bodyFat is <strong>{{bodyFat}}</strong> so you need to {{comment}}</p>
+      <p>Wow !!! Your TDDE is <strong>{{tdde}}</strong></p>
+    <!-- <p>Wow !!! Your TDDE for building muscle is <strong>{{ tdde_for_musclebuilding}}</strong></p> -->
+    <!-- <p>Wow !!! You need more <strong>{{Calories_for_musclebuilding}}</strong> to building your body </p> -->
+      <p>Wow !!! Your meal cabohydrate is <strong>{{cabohydrate}}</strong></p>
+      <p>Wow !!! Your meal protein is <strong>{{protein}}</strong></p>
+      <p>Wow !!! Your meal fats is <strong>{{fats}}</strong></p>
+        
+      {{suggestion |safe}}
+    
+  </body>
+</html>
